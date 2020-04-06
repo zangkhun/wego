@@ -17,7 +17,7 @@ type Service struct {
 // NewService 创建一个服务
 func NewService(conf ServiceConfig) *Service {
 	return &Service{
-		conf:   ServiceConfig{},
+		conf:   conf,
 		engine: gin.Default(),
 	}
 }
